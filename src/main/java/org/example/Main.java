@@ -13,8 +13,15 @@ public class Main {
             System.out.println("Привет");
         }
 
+        Scanner greeting = new Scanner(System.in);
+        System.out.println("Enter the name: ");
 
+        String name = greeting.nextLine();
+        if (name.equals("Вячаслав")) {
+            System.out.println("Привет, Вячаслав");
+        } else {
+            System.out.println("Нет такого имени");
         }
 
     }
-
+}
