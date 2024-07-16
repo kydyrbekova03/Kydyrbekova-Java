@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int[] array = {3, 7, 17, 21, 33, 64, 77};
 
         Scanner enteredNum = new Scanner(System.in);
         System.out.println("Enter the number: ");
@@ -23,5 +24,11 @@ public class Main {
             System.out.println("Нет такого имени");
         }
 
+        System.out.println("Цифры кратные 3м: ");
+        for(int n : array){
+            if(n%3==0){
+                System.out.println(n);
+            }
+        }
     }
 }
